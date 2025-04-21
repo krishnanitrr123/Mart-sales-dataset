@@ -10,7 +10,7 @@ Main function used in this method- (df-is a variable for main dataset)
 #To read the dataset
 2.df.isnull().sum()
 3.df['Outlet_Size'] = df['Outlet_Size'].map({"Small":1,"Medium":2,"High":3})
-#To convert string categories to integers we use the mapping.
+#To convert string  to integers we use the mapping.
 4.df['Item_Weight']=df['Item_Weight'].fillna(df['Item_Weight'].median())
 #We  use the median to fill the missing integer value
 5.df['Outlet_Size'].fillna(df['Outlet_Size'].mode()[0], inplace=True)
